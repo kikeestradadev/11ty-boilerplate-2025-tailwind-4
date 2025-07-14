@@ -1,0 +1,56 @@
+{
+	"slider1":
+		[
+			{
+				"img": "/assets/images/img4.jpg",
+				"title": "slider_item_1"
+			},
+			{
+				"img": "/assets/images/img2.jpg",
+				"title": "slider_item_2" 
+			},
+			{ 
+				"img": "/assets/images/img3.jpg",
+				"title": "slider_item_3"
+			},
+			{
+				"img": "/assets/images/img4.jpg",
+				"title": "slider_item_4"
+			}
+		],
+	"slider2":
+		[
+			{
+				"img": "/assets/images/img4.jpg",
+				"title": "example2 - item 1",
+				"category": {
+					"cat1": "cat1",
+					"cat2": "cat2"
+				}
+			},
+			{
+				"img": "/assets/images/img2.jpg",
+				"title": "example2 - item 2",
+				"category": {
+					"cat1": "cat1",
+					"cat2": "cat2"
+				}
+			},
+			{ 
+				"img": "/assets/images/img3.jpg",
+				"title": "example2 - item 3",
+				"category": {
+					"cat1": "cat1",
+					"cat2": "cat2"
+				}
+			},
+			{
+				"img": "/assets/images/img4.jpg",
+				"title": "example2 - item 4",
+				"category": {
+					"cat1": "cat1",
+					"cat2": "cat2"
+				}
+			}
+		]
+}

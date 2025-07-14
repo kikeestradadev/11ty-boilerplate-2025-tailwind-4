@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+	--bg-body: steelblue;
+}
+::selection {
+	color: white;
+	background: #9e852e;
+}
+
+.main-container{
+	width: 100%;
+	max-width: 3500px;
+	margin: 0 auto;
+	padding: 0 20px;
+	@media (min-width: 1200px) {
+		padding: 0 40px;
+	}
+}
+
+.container{
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+
+}

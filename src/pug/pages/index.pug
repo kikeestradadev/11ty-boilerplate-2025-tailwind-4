@@ -1,0 +1,18 @@
+extends ../_layouts/base
+
+block config
+	- let currentPage = "home"
+	- let siteName = 'site'
+	- let content = 'content'
+	- let pageDescription = 'Pagina inicial de MyBoilerplate'
+
+block body-container
+	// Aquí puedes agregar el contenido de tu página
+	h1(class="text-4xl font-bold text-green-700") Bienvenido a #{siteName} 
+	p(class="mt-2") #{pageDescription}
+	include ../components/style-guide/_json-data.pug
+	include ../components/style-guide/_flex-module.pug
+	include ../components/style-guide/_grid-module.pug
+
+block scripts
+	// Aquí puedes agregar scripts adicionales si es necesario
