@@ -4,15 +4,17 @@
   "scripts": {
     "dev": "npm-run-all --parallel watch:css watch:js serve",
     "serve": "npx eleventy --serve",
-    "build": "npx eleventy",
-    "css": "postcss src/styles/main.scss -o src/assets/styles.css",
-    "watch:css": "postcss src/styles/main.scss -o src/assets/styles.css --watch",
-    "build:js": "esbuild src/js/index.js --bundle --outfile=src/assets/index-dist.js --minify",
-    "watch:js": "esbuild src/js/index.js --bundle --outfile=src/assets/index-dist.js --minify --watch"
+    "build": "npm-run-all build:css build:js && npx eleventy",
+    "css": "postcss src/styles/main.scss -o src/assets/styles.css --map",
+    "watch:css": "postcss src/styles/main.scss -o src/assets/styles.css --map --watch",
+    "build:css": "postcss src/styles/main.scss -o src/assets/styles.css --map",
+    "build:js": "esbuild src/js/index.js --bundle --outfile=src/assets/index-dist.js --minify --sourcemap",
+    "watch:js": "esbuild src/js/index.js --bundle --outfile=src/assets/index-dist.js --minify --sourcemap --watch"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
     "esbuild": "^0.25.6",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.24",
