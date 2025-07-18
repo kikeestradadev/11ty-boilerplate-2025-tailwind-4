@@ -14,6 +14,11 @@ module.exports = function(eleventyConfig) {
 		};
 	});
 
+	// Configuración de watch para detectar cambios en todos los archivos
+	eleventyConfig.addWatchTarget("src/pug/**/*");
+	eleventyConfig.addWatchTarget("src/styles/**/*");
+	eleventyConfig.addWatchTarget("src/js/**/*");
+
 	return {
 		dir: {
 			input: "src/pug/pages",

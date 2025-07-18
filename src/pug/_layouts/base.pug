@@ -1,9 +1,18 @@
 block config
-	include vars
+	-let currentPage 		= 'home'
+	-let content 			= 'My Page'
+	-let siteName 			= 'GulpBoilerplate'
+	-let pageDescription 	= 'Here is the description Page.'
+
 doctype html
 html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 	head
-		include metatags 
+		meta(charset="utf-8")
+		meta(name="description", content="Your page description here")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="apple-mobile-web-app-status-bar-style", content="default")
+		meta(name="format-detection", content="telephone=no")
+		link(rel="shortcut icon", type="image/x-icon", href="img/favicon.png") 
 		link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
 		link(rel="preconnect" href="https://fonts.googleapis.com")
 		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
@@ -16,7 +25,7 @@ html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 			block main-header
 		//- here ends the Main Header
 		//- here start the Main Container
-		main
+		main(class='flex-1')
 			block main-container
 		//- here ends the Main Container
 		//- here start the Main Footer

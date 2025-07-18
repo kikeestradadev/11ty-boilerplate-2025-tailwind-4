@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root{
 	--base-color: steelblue;
 	--header-height: 96px;
@@ -10,9 +9,31 @@
 	--bg-body: white;
 	--header-height: 80px;	
 }
+
 ::selection {
 	color: white;
 	background: #9e852e;
+}
+
+/* Estilos Sass que necesitarán prefijos */
+.sass-example {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(-50%);
+	transition: all 0.3s ease;
+	user-select: none;
+}
+
+.sass-example:hover {
+	transform: translateX(0) scale(1.1);
+}
+
+/* Grid CSS nativo (necesitará prefijos) */
+.css-grid-example {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
 }
 
 .main-container{
@@ -29,5 +50,4 @@
 	width: 100%;
 	max-width: 1600px;
 	margin: 0 auto;
-
 }
