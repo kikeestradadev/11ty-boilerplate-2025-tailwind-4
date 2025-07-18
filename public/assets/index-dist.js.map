@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../js/core-modules/coreModule.js", "../js/internal-modules/internalModule.js", "../js/index.js"],
+  "sourcesContent": ["const coreModule = () => {\n\tconsole.log('Hola Core Module');\n};\nexport default coreModule \n", "const internalModule = () => {\n\tconsole.log('Hola internal Module '); \n};\nexport default internalModule \n", "/*here start core layout ui scripts imports*/\nimport coreModule from './core-modules/coreModule';\n/*here finish core layout ui scripts imports*/\n\n/*here start internal layout ui components scripts imports*/\nimport internalModule from './internal-modules/internalModule';\n/*here finish internal layout ui components scripts imports*/\n\n(() => {\n\t/*here start core layout ui scripts functions*/\n    coreModule();\n\t/*here finish core layout ui scripts functions*/\n})();\n\n(() => {\n\t/*here start internal layout ui components functions*/\n\tinternalModule();\n\t/*here finish internal layout ui components functions*/\n})(); \n"],
+  "mappings": "MAAA,IAAMA,EAAa,IAAM,CACxB,QAAQ,IAAI,kBAAkB,CAC/B,EACOC,EAAQD,ECHf,IAAME,EAAiB,IAAM,CAC5B,QAAQ,IAAI,uBAAuB,CACpC,EACOC,EAAQD,ECOXE,EAAW,EAMdC,EAAe",
+  "names": ["coreModule", "coreModule_default", "internalModule", "internalModule_default", "coreModule_default", "internalModule_default"]
+}

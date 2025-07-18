@@ -6,13 +6,13 @@ block config
 	- let content = 'content'
 	- let pageDescription = 'Pagina inicial de MyBoilerplate'
 
-block body-container
-	// Aquí puedes agregar el contenido de tu página
-	h1(class="text-4xl font-bold text-green-700") Bienvenido a #{siteName} 
+block main-header
+block main-container
+	h1(class="text-4xl font-bold text-green-700") Bienvenido a #{siteName} home page
 	p(class="mt-2") #{pageDescription}
 	include ../components/style-guide/_json-data.pug
 	include ../components/style-guide/_flex-module.pug
-	include ../components/style-guide/_grid-module.pug
-
+	include ../components/style-guide/_grid-module.pug 
+block main-footer
 block scripts
 	// Aquí puedes agregar scripts adicionales si es necesario

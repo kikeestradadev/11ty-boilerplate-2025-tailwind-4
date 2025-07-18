@@ -4,7 +4,11 @@
 
 
 :root{
-	--bg-body: steelblue;
+	--base-color: steelblue;
+	--header-height: 96px;
+	--footer-height: 96px;
+	--bg-body: white;
+	--header-height: 80px;	
 }
 ::selection {
 	color: white;
